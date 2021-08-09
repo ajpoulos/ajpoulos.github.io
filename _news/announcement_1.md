@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2020-05-19 20:00:00-0400
 inline: true
 ---
 
-A simple inline announcement.
+I was awarded the Nancy Grant Chamberlain Fellowship at Stanford for the 2020-2021 academic year.

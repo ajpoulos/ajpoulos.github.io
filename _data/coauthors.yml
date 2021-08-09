@@ -1,18 +1,11 @@
-"Adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Llera":
+  - firstname: ["Juan Carlos", "J. C."]
+    url: https://www.ing.uc.cl/en/academicos-e-investigadores/juan-carlos-de-la-llera-martin/
 
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Mitrani-Reiser":
+  - firstname: ["Judith", "J."]
+    url: https://www.nist.gov/people/judith-mitrani-reiser
 
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
-
-"Bach": 
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
-
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Miranda":
+  - firstname: ["Eduardo", "E."]
+    url: https://profiles.stanford.edu/eduardo-miranda
