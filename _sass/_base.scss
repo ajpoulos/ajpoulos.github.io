@@ -204,10 +204,10 @@ blockquote {
 .social {
   text-align: center;
   .contact-icons {
-    font-size: 4rem;
+    font-size: 3rem;
     a {
       i::before {
-        color: var(--global-text-color);
+        //color: var(--global-text-color);
         -webkit-transition: all 0.2s ease-in-out;
       }
       &:hover {
@@ -243,9 +243,9 @@ footer.fixed-bottom {
 
 footer.sticky-bottom {
   border-top: 1px solid $grey-color-light;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 0.9rem;
+  padding-top: 7px;
+  padding-bottom: 6px;
+  font-size: 0.75rem;
 }
 
 
@@ -381,7 +381,7 @@ footer.sticky-bottom {
     }
   }
   h2.year {
-    color: $grey-color-light;
+    color: $grey-color;
     border-top: 1px solid $grey-color-light;
     padding-top: 1rem;
     margin-top: 2rem;
@@ -420,10 +420,8 @@ footer.sticky-bottom {
       }
       .author {
         a {
-          border-bottom: 1px dashed var(--global-theme-color);
           &:hover {
-              border-bottom-style: solid;
-              text-decoration: none;
+			  text-decoration: underline;
           }
         }
         > em {
@@ -517,3 +515,7 @@ html.transition *:after {
   transition: all 750ms !important;
   transition-delay: 0 !important;
 }
+
+
+
+
