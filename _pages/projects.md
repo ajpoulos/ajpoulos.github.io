@@ -2,9 +2,9 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: 
+description: Under construction
 nav: true
-display_categories: [work, fun]
+display_categories: #[work, fun]
 horizontal: false
 ---
 <div class="projects">
