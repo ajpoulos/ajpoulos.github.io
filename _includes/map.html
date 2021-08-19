@@ -1,0 +1,88 @@
+<div class="map">
+  <h2>Latest earthquakes</h2>
+    <div id = "mapid" style = "height: 380px; width: 520px">
+	<script>
+		
+		// Creating background layer
+		var osm = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+		
+		// Define data layers
+		var plateBoundary = new L.LayerGroup();
+		var earthquakes = new L.LayerGroup();
+		
+		var baselayers = {
+			"openStreetMap": osm
+		};
+		
+		var overlays = {
+			"Plate Boundaries": plateBoundary,
+			"Earthquakes": earthquakes,
+		};
+		
+		// Creating a map object
+		var map = new L.map('mapid', {
+			center: [0, 0],
+			zoom: 1,
+			layers: [osm, earthquakes, plateBoundary]
+		});
+		
+		// Add earthquakes
+		$.getJSON("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson")
+		.then(function (data) {
+			L.geoJson(data, {
+				pointToLayer: function (feature, latlng) {
+					var d = new Date();
+					var age = d.getTime() - feature.properties.time;
+					if (age < 60 * 60 * 1000) {
+						var colorStr = 'red';
+					} else if (age < 24 * 60 * 60 * 1000) {
+						var colorStr = 'orange';
+					} else {
+						var colorStr = 'yellow';
+					}
+					var marker = L.circleMarker(latlng, {
+						radius: feature.properties.mag,
+						color:'#000000', 
+						weight:1, 
+						fillColor:colorStr,
+						fillOpacity:1 });
+					marker.bindPopup('Magnitude: ' + feature.properties.mag + '<br/>' + feature.properties.place);
+					return marker;
+				}
+			}).addTo(earthquakes);
+		})
+		.fail(function(err){
+			console.log(err.responseText)
+		});
+		
+		// Add plate boundaries
+		$.getJSON("https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json",
+			function (geoJson) {
+				L.geoJSON(geoJson.features, {
+					style: function (geoJsonFeature) {
+						return {
+							weight: 1,
+							color: 'red'
+						}
+					},
+				}).addTo(plateBoundary);
+			})
+		
+		L.control.layers(baselayers, overlays).addTo(map);
+		
+		map.attributionControl.addAttribution('&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors');
+		
+		// Legend
+		<!-- var legend = L.control({ position: "bottomleft" }); -->
+		<!-- legend.onAdd = function(map) { -->
+			<!-- var div = L.DomUtil.create("div", "info legend"); -->
+			<!-- labels = ['<strong>Age</strong>']; -->
+			<!-- labels.push( -->
+        <!-- '<i class="circlepadding" style="width: 5px;"></i> <i style="background: #8080A0; width: 5px; height: 5px; border-radius: 50%; margin-top: 1px;"></i><i class="circlepadding" style="width: 1px;"></i> Day'); -->
+			<!-- div.innerHTML = labels.join('<br>'); -->
+			<!-- return div; -->
+		<!-- }; -->
+		<!-- legend.addTo(map); -->
+		
+    </script>
+</div>
