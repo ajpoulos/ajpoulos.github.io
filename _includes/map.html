@@ -1,6 +1,6 @@
 <div class="map">
-  <h2>Latest earthquakes</h2>
-    <div id = "mapid" style = "height: 380px; width: 520px">
+  <h2 style="text-align: center;">Latest earthquakes</h2>
+    <div id = "mapid" style = "height: 380px; width: 520px; margin: auto">
 	<script>
 		
 		// Creating background layer
@@ -23,12 +23,19 @@
 		var map = new L.map('mapid', {
 			center: [0, 0],
 			zoom: 1,
-			layers: [osm, earthquakes, plateBoundary]
+			layers: [osm, plateBoundary, earthquakes]
 		});
 		
 		// Add earthquakes
 		$.getJSON("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson")
 		.then(function (data) {
+			
+			// Sort by date
+			function sortJson(a,b){
+				return a.properties.time - b.properties.time;
+			};
+			data.features.sort(sortJson);
+			
 			L.geoJson(data, {
 				pointToLayer: function (feature, latlng) {
 					var d = new Date();
@@ -46,7 +53,7 @@
 						weight:1, 
 						fillColor:colorStr,
 						fillOpacity:1 });
-					marker.bindPopup('Magnitude: ' + feature.properties.mag + '<br/>' + feature.properties.place);
+					marker.bindPopup(feature.properties.title);
 					return marker;
 				}
 			}).addTo(earthquakes);
@@ -73,16 +80,16 @@
 		map.attributionControl.addAttribution('&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors');
 		
 		// Legend
-		<!-- var legend = L.control({ position: "bottomleft" }); -->
-		<!-- legend.onAdd = function(map) { -->
-			<!-- var div = L.DomUtil.create("div", "info legend"); -->
-			<!-- labels = ['<strong>Age</strong>']; -->
-			<!-- labels.push( -->
-        <!-- '<i class="circlepadding" style="width: 5px;"></i> <i style="background: #8080A0; width: 5px; height: 5px; border-radius: 50%; margin-top: 1px;"></i><i class="circlepadding" style="width: 1px;"></i> Day'); -->
-			<!-- div.innerHTML = labels.join('<br>'); -->
-			<!-- return div; -->
-		<!-- }; -->
-		<!-- legend.addTo(map); -->
+		/*var legend = L.control({ position: "bottomleft" });
+		legend.onAdd = function(map) {
+			var div = L.DomUtil.create("div", "info legend");
+			labels = ['<strong>Age</strong>'];
+			labels.push(
+        '<i class="circlepadding" style="width: 5px;"></i> <i style="background: #8080A0; width: 5px; height: 5px; border-radius: 50%; margin-top: 1px;"></i><i class="circlepadding" style="width: 1px;"></i> Day');
+			div.innerHTML = labels.join('<br>');
+			return div;
+		};
+		legend.addTo(map);*/
 		
     </script>
 </div>

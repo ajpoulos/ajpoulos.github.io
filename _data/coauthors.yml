@@ -17,3 +17,7 @@
 "Baker":
   - firstname: ["Jack W.", "J. W."]
     url: https://www.jackwbaker.com
+   
+"Silva-Lopez":
+  - firstname: ["Rodrigo", "R."]
+    url: https://www.rsilvalopez.com/
