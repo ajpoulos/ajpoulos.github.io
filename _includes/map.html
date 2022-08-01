@@ -53,7 +53,11 @@
 						weight:1, 
 						fillColor:colorStr,
 						fillOpacity:1 });
-					marker.bindPopup(feature.properties.title);
+					//marker.bindPopup(feature.properties.title);
+					
+					var date = new Date(feature.properties.time);
+					marker.bindPopup("<b>Date: </b>" + date.toDateString() + "<br /><b>Magnitude: </b>" + feature.properties.mag);
+					
 					return marker;
 				}
 			}).addTo(earthquakes);
@@ -77,19 +81,27 @@
 		
 		L.control.layers(baselayers, overlays).addTo(map);
 		
-		map.attributionControl.addAttribution('&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors');
+		map.attributionControl.addAttribution('&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>');
 		
 		// Legend
-		/*var legend = L.control({ position: "bottomleft" });
+		var legend = L.control({ position: "bottomleft" });
 		legend.onAdd = function(map) {
 			var div = L.DomUtil.create("div", "info legend");
-			labels = ['<strong>Age</strong>'];
+			var labels = ['hour', 'day', 'week'];
+			var colors = ['red', 'orange', 'yellow'];
+			
+			// loop through time intervals and generate a label with a colored circle for each interval
+			for (var i = 0; i < labels.length; i++) {
+				div.innerHTML += '<i style="background:' + colors[i] + '"></i> Past ' + labels[i] + '<br>';
+			}
+			
+			/*labels = ['<strong>Age</strong>'];
 			labels.push(
         '<i class="circlepadding" style="width: 5px;"></i> <i style="background: #8080A0; width: 5px; height: 5px; border-radius: 50%; margin-top: 1px;"></i><i class="circlepadding" style="width: 1px;"></i> Day');
-			div.innerHTML = labels.join('<br>');
+			div.innerHTML = labels.join('<br>');*/
 			return div;
 		};
-		legend.addTo(map);*/
+		legend.addTo(map);
 		
     </script>
 </div>
