@@ -1,5 +1,5 @@
 <div class="map">
-  <h2 style="text-align: center;">Latest earthquakes</h2>
+  <h2 style="text-align: center;">Latest earthquakes <span>[<a href="https://earthquake.usgs.gov/earthquakes/feed/" target="_blank">7 day M4.5+ USGS feed</a>]</span></h2>
     <div id = "mapid" style = "height: 380px; width: 520px; margin: auto">
 	<script>
 		
@@ -94,11 +94,7 @@
 			for (var i = 0; i < labels.length; i++) {
 				div.innerHTML += '<i style="background:' + colors[i] + '"></i> Past ' + labels[i] + '<br>';
 			}
-			
-			/*labels = ['<strong>Age</strong>'];
-			labels.push(
-        '<i class="circlepadding" style="width: 5px;"></i> <i style="background: #8080A0; width: 5px; height: 5px; border-radius: 50%; margin-top: 1px;"></i><i class="circlepadding" style="width: 1px;"></i> Day');
-			div.innerHTML = labels.join('<br>');*/
+		
 			return div;
 		};
 		legend.addTo(map);

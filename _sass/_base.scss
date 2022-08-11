@@ -524,6 +524,13 @@ html.transition *:after {
 
 
 // Earthquake map
+.map {
+  h2 {
+    span {
+      font-size: 1.5rem;
+    }
+  }
+}
 .legend {
   line-height: 18px;
   color: #555;
