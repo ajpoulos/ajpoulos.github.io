@@ -26,6 +26,19 @@
 			layers: [osm, plateBoundary, earthquakes]
 		});
 		
+		// Add plate boundaries
+		$.getJSON("https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json",
+			function (geoJson) {
+				L.geoJSON(geoJson.features, {
+					style: function (geoJsonFeature) {
+						return {
+							weight: 1,
+							color: 'red'
+						}
+					},
+				}).addTo(plateBoundary);
+			})
+		
 		// Add earthquakes
 		$.getJSON("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson")
 		.then(function (data) {
@@ -56,7 +69,7 @@
 					//marker.bindPopup(feature.properties.title);
 					
 					var date = new Date(feature.properties.time);
-					marker.bindPopup("<b>Date: </b>" + date.toDateString() + "<br /><b>Magnitude: </b>" + feature.properties.mag);
+					marker.bindPopup("<b>Date: </b>" + date.toDateString() + "<br /><b>Magnitude: </b>" + feature.properties.mag.toFixed(1));
 					
 					return marker;
 				}
@@ -65,19 +78,6 @@
 		.fail(function(err){
 			console.log(err.responseText)
 		});
-		
-		// Add plate boundaries
-		$.getJSON("https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json",
-			function (geoJson) {
-				L.geoJSON(geoJson.features, {
-					style: function (geoJsonFeature) {
-						return {
-							weight: 1,
-							color: 'red'
-						}
-					},
-				}).addTo(plateBoundary);
-			})
 		
 		L.control.layers(baselayers, overlays).addTo(map);
 		
