@@ -6,7 +6,7 @@ description: PhD Candidate, Structural Engineering, <a href="https://www.stanfor
 
 profile:
   align: right
-  image: prof_pic2.jpg
+  image: IMG_3804.jpg
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
