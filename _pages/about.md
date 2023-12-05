@@ -7,6 +7,7 @@ description: PhD Candidate, Structural Engineering, <a href="https://www.stanfor
 profile:
   align: right
   image: IMG_3804.jpg
+  address: Photo by <a href="https://www.bernarditaried.com/" target="_blank">Bernardita Ried Guachalla</a>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
