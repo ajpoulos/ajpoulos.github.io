@@ -2,7 +2,7 @@
 layout: page
 title: Evacuation modeling
 description: #An example project
-img: /assets/img/Evacuation.png
+img: /assets/img/Evacuation_2.png
 importance: 4
 category: work
 ---
