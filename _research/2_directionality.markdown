@@ -2,7 +2,7 @@
 layout: page
 title: Ground motion directionality
 description: #An example project
-img: /assets/img/hector_mine_v2.svg
+img: /assets/img/publication_preview/Poulos_Miranda_2023_BSSA.svg
 importance: 1
 category: work
 ---
@@ -12,7 +12,7 @@ Ground motion directionality corresponds to the variation of ground motion inten
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0 text-center">
-        <img class="img-fluid rounded z-depth-1" style="max-width: 60%" src="{{ '/assets/img/Orbit.svg' | relative_url }}" alt="" title="Figure 1"/>
+        <img class="img-fluid rounded z-depth-1" style="max-width: 60%" src="{{ '/assets/img/publication_preview/Poulos_Miranda_2022_EESD.svg' | relative_url }}" alt="" title="Figure 1"/>
     </div>
 </div>
 <div class="caption">

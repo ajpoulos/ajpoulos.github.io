@@ -2,7 +2,7 @@
 layout: page
 title: Seismic risk assessment
 description: #An example project
-img: /assets/img/Risk2.png
+img: /assets/img/publication_preview/Silva_Lopez_et_al_2022a_JCEE.png
 importance: 2
 category: work
 ---

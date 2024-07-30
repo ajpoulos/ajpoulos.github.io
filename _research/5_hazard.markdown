@@ -2,7 +2,7 @@
 layout: page
 title: Seismic source modeling
 description: #An example project
-img: /assets/img/Recurrence_model.png
+img: /assets/img/publication_preview/Poulos_et_el_2019_BSSA.png
 importance: 2
 category: work
 ---
@@ -12,7 +12,7 @@ Seismic source models are a critical input for any probabilistic seismic hazard 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0 text-center">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/Recurrence_model.png' | relative_url }}" alt="" title="Figure 1"/>
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/publication_preview/Poulos_et_el_2019_BSSA.png' | relative_url }}" alt="" title="Figure 1"/>
     </div>
 </div>
 <div class="caption">

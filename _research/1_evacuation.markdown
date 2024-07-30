@@ -11,7 +11,7 @@ Evacuating the occupants of a building effectively is critical to minimize casua
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0 text-center">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/Evacuation_Victoria.svg' | relative_url }}" alt="" title="Figure 1"/>
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/publication_preview/Poulos_et_al_2018_TRPC.svg' | relative_url }}" alt="" title="Figure 1"/>
     </div>
 </div>
 <div class="caption">
@@ -22,7 +22,7 @@ We then used the same model to simulate the effect of building damage due to an 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0 text-center">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/3Devacuation.png' | relative_url }}" alt="" title="Figure 2"/>
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/publication_preview/Poulos_et_al_2017_EESD.png' | relative_url }}" alt="" title="Figure 2"/>
     </div>
 </div>
 <div class="caption">
@@ -35,7 +35,7 @@ Finally, we expanded the model to simulate city-scale evacuations considering pe
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0 text-center">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/Iquique.svg' | relative_url }}" alt="" title="Figure 3"/>
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/publication_preview/Castro_et_al_2019_Spectra.svg' | relative_url }}" alt="" title="Figure 3"/>
     </div>
 </div>
 <div class="caption">

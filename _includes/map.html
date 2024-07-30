@@ -4,14 +4,18 @@
 	<script>
 		
 		// Creating background layer
-		var osm = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+		var osm = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'});
+		var topo = new L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+        attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, SRTM | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+		});
 		
 		// Define data layers
 		var plateBoundary = new L.LayerGroup();
 		var earthquakes = new L.LayerGroup();
 		
 		var baselayers = {
-			"openStreetMap": osm
+			"Street Map": osm,
+			"Topographic Map": topo
 		};
 		
 		var overlays = {
@@ -69,7 +73,9 @@
 					//marker.bindPopup(feature.properties.title);
 					
 					var date = new Date(feature.properties.time);
-					marker.bindPopup("<b>Date: </b>" + date.toDateString() + "<br /><b>Magnitude: </b>" + feature.properties.mag.toFixed(1));
+					const utc_strings = date.toUTCString().split(' ');
+					const utc_time = utc_strings[utc_strings.length - 2] + " (UTC)";
+					marker.bindPopup("<b>Date: </b>" + date.toDateString() + "<br /><b>Time: </b>" + utc_time + "<br /><b>Magnitude: </b>" + feature.properties.mag.toFixed(1) + "<br /><a href=" + feature.properties.url + " target='_blank'>Event page</a>");
 					
 					return marker;
 				}
@@ -81,7 +87,7 @@
 		
 		L.control.layers(baselayers, overlays).addTo(map);
 		
-		map.attributionControl.addAttribution('&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>');
+		//map.attributionControl.addAttribution('&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>');
 		
 		// Legend
 		var legend = L.control({ position: "bottomleft" });

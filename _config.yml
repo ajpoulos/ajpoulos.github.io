@@ -170,6 +170,8 @@ scholar:
   details_link: Details
 
   query: "@*"
+  group_by: year
+  group_order: descending
 
 # -----------------------------------------------------------------------------
 # Optional Features

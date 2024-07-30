@@ -2,7 +2,7 @@
 layout: page
 title: Correlations of spectral accelerations
 description: #An example project
-img: /assets/img/Surfaces_2.png
+img: /assets/img/publication_preview/Poulos_Miranda_2023_EESD.png
 importance: 3
 category: work
 ---
