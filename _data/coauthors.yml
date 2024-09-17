@@ -139,4 +139,15 @@
   - firstname: ["Catalina", "C."]
     url: https://itrend.cl/en/team/catalina-fortuno
 
+"Straub":
+  - firstname: ["Daniel", "D."]
+    url: https://www.professoren.tum.de/en/straub-daniel
+
+"Rosero-Velásquez":
+  - firstname: ["Hugo", "H."]
+    url: https://www.cee.ed.tum.de/era/team/hugo-rosero/
+
+"Gómez Zapata":
+  - firstname: ["Juan Camilo", "J. C."]
+    url: https://www.gfz-potsdam.de/en/staff/juan.camilo.gomez.zapata
 
