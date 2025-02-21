@@ -5,7 +5,7 @@
    viewBox="0 0 506.39198 357.37615"
    width="506.39197pt"
    id="svg1970"
-   sodipodi:docname="hector_mine_v2.svg"
+   sodipodi:docname="Poulos_Miranda_2023_BSSA.svg"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -25,9 +25,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="0.96745963"
-     inkscape:cx="407.76895"
-     inkscape:cy="283.73277"
+     inkscape:zoom="0.48372982"
+     inkscape:cx="573.66735"
+     inkscape:cy="507.51472"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
      inkscape:window-x="-9"
@@ -63,6 +63,13 @@
   <g
      id="figure_1"
      transform="translate(-204.03337)">
+    <rect
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:0"
+       id="rect804"
+       width="506.39194"
+       height="357.37616"
+       x="204.03337"
+       y="2.2620902e-07" />
     <g
        id="patch_1"
        transform="matrix(0.95465198,0,0,0.95836593,32.216382,0)"

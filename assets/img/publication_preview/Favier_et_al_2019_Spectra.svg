@@ -27,9 +27,9 @@
      fit-margin-top="2"
      fit-margin-bottom="2"
      fit-margin-right="2"
-     inkscape:zoom="1.8116734"
-     inkscape:cx="157.03713"
-     inkscape:cy="153.72528"
+     inkscape:zoom="1"
+     inkscape:cx="-34.5"
+     inkscape:cy="123.5"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
      inkscape:window-x="-9"
@@ -1128,6 +1128,13 @@
     <g
        id="surface34472"
        transform="matrix(0.35277778,0,0,0.35277778,61.151762,20.618935)">
+      <rect
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:0"
+         id="rect548"
+         width="266.45087"
+         height="240.42703"
+         x="120.81699"
+         y="80.507393" />
       <path
          style="fill:#211e1e;fill-opacity:1;fill-rule:nonzero;stroke:none"
          d="m 151.99219,196.63672 h -0.19922 v 94.47656 h 9.88672 V 196.4375 h -9.88672 v 0.19922 h 0.19922 v 0.19922 h 9.28906 v 93.8789 h -9.08984 v -94.07812 h -0.19922 v 0.19922 -0.19922"
