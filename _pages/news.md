@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /news/
+permalink: /news_all/
 title: News
 description: 
 nav: false
