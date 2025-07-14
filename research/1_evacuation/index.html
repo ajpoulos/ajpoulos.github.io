@@ -11,7 +11,7 @@
   Alan  Poulos
 
 
-  | blog
+  | Evacuation modeling
 
 </title>
 <meta name="description" content="My personal website.
@@ -45,7 +45,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 110 110%22><text y=%22.95em%22 font-size=%2290%22>🌎</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/research/1_evacuation/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -135,8 +135,6 @@
           
           
           
-          
-          
           <li class="nav-item ">
               <a class="nav-link" href="/publications/">
                 Publications
@@ -185,18 +183,343 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2></h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Evacuation modeling</h1>
+    <p class="post-description"></p>
+  </header>
+
+  <article>
+    <p>Evacuating the occupants of a building effectively is critical to minimize casualties due to several natural or anthropogenic hazards. Building evacuation models can help us prepare for future emergency events and illuminate possible shortcomings of current evacuation designs. However, these types of models are seldom validated with real evacuations, which is a critical step in assessing their predictive capabilities. Therefore, we constructed an agent-based building evacuation model to simulate a real tsunami evacuation drill in a K-12 school with approximately 1500 children and staff in the city of Iquique, Chile (Poulos et al., 2018). Our results show a good agreement between the simulated and real evacuations, suggesting that these types of models can be used in emergency planning.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/publication_preview/Poulos_et_al_2018_TRPC.svg" alt="" title="Figure 1" />
+    </div>
+</div>
+<div class="caption">
+    Figure 1: Three snapshots of an evacuation simulation of one of the school's buildings and a comparison of the number of people that evacuated the building over time of 25 simulations compared to the real data from the evacuation drill.
+</div>
+
+<p>We then used the same model to simulate the effect of building damage due to an earthquake on the evacuation of a building. As a testbed, we used a four-story reinforced concrete frame building. We used the ground motion at the location of the building to compute the inelastic response of the structure, which we then used to estimate the damage to building contents (e.g., false ceilings and partition walls). We then coupled the building damage with the response of evacuating agents. Several simulations at different ground motion intensity levels were then integrated with the seismic hazard at the site to compute seismic risk. The results of this analysis were cast as probability distributions of variables that measure the system’s overall performance (e.g., evacuation times, number of injured people, and repair costs) for specific time windows.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/publication_preview/Poulos_et_al_2017_EESD.png" alt="" title="Figure 2" />
+    </div>
+</div>
+<div class="caption">
+    Figure 2: Four snapshots of an evacuation simulation at a section of the fourth floor of the building.
+</div>
+
+<p>Finally, we expanded the model to simulate city-scale evacuations considering people and cars (Castro et al., 2019). We used the model to simulate a tsunami evacuation of downtown Iquique during the same drill considered when simulating the evacuation of the K-12 school. The study area had 46,500 people and 2,000 cars evacuating to the safety zones shown in Figure 3. Running several simulations of the model, we estimated mean evacuation times reasonably close to those of the actual evacuation drill.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/publication_preview/Castro_et_al_2019_Spectra.svg" alt="" title="Figure 3" />
+    </div>
+</div>
+<div class="caption">
+    Figure 3: Map of mean evacuation times of people that start at each location from 70 simulations.
+</div>
+
+<div class="publications">
+
+<h3>Publications</h3>
+
+<ol class="bibliography"><li><div class="row">
+
+<div class="col-sm-1">
+  <div class="links_short">
+	
+	  
+	  <a href="/assets/pdf/Castro_et_al_2019_Earthquake_Spectra.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+	  
+	
+	</div>
+</div>
+
+<div id="castro2019modeling" class="col-sm-11">
+
+<div class="author">
+	
+	  
+	  
+	  
+	  
+		
+		  
+			
+			
+	  
+	  
+	  
+		
+		  
+			
+			  <a href="https://scholar.google.com/citations?user=KxU55C0AAAAJ" target="_blank"> Castro, S.</a>,
+			
+		  
+		
+	  
+	
+	  
+	  
+	  
+	  
+	  
+	  
+		
+		  
+			<em>Poulos, A.</em>,
+		  
+		
+	  
+	
+	  
+	  
+	  
+	  
+		
+		  
+			
+			
+	  
+	  
+	  
+		
+		  
+			
+			  <a href="https://www.ing.uc.cl/academicos-e-investigadores/juan-carlos-herrera-maldonado/" target="_blank"> Herrera, J. C.</a>,
+			
+		  
+		
+	  
+	
+	  
+	  
+	  
+	  
+		
+		  
+			
+			
+	  
+	  
+	  
+		
+		  
+			
+			  and <a href="https://www.ing.uc.cl/en/academicos-e-investigadores/juan-carlos-de-la-llera-martin/" target="_blank">de la Llera, J. C.</a>
+			
+		  
+		
+	  
+	
+	
+	(2019).
+	Modeling the impact of earthquake-induced debris on tsunami evacuation times of coastal cities.
+	<i>Earthquake Spectra</i>
+	
+		, 35(1), 137-158.
+	
+	
+</div>
+
+</div>
+
+</div>
 
 
-  <ul class="post-list">
-    
-  </ul>
+</li>
+<li><div class="row">
 
-  
+<div class="col-sm-1">
+  <div class="links_short">
+	
+	  
+	  <a href="/assets/pdf/Poulos_et_at_2018_TRPC.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+	  
+	
+	</div>
+</div>
 
+<div id="poulos2018validation" class="col-sm-11">
+
+<div class="author">
+	
+	  
+	  
+	  
+	  
+	  
+	  
+		
+		  
+			<em>Poulos, A.</em>,
+		  
+		
+	  
+	
+	  
+	  
+	  
+	  
+	  
+	  
+		
+		  
+			
+			   Tocornal, F.,
+			
+		  
+		
+	  
+	
+	  
+	  
+	  
+	  
+		
+		  
+			
+			
+	  
+	  
+	  
+		
+		  
+			
+			  <a href="https://www.ing.uc.cl/en/academicos-e-investigadores/juan-carlos-de-la-llera-martin/" target="_blank">de la Llera, J. C.</a>,
+			
+		  
+		
+	  
+	
+	  
+	  
+	  
+	  
+		
+		  
+			
+			
+	  
+	  
+	  
+		
+		  
+			
+			  and <a href="https://www.nist.gov/people/judith-mitrani-reiser" target="_blank"> Mitrani-Reiser, J.</a>
+			
+		  
+		
+	  
+	
+	
+	(2018).
+	Validation of an agent-based building evacuation model with a school drill.
+	<i>Transportation Research Part C: Emerging Technologies</i>
+	
+		, 97, 82-95.
+	
+	
+</div>
+
+</div>
+
+</div>
+
+
+</li>
+<li><div class="row">
+
+<div class="col-sm-1">
+  <div class="links_short">
+	
+	  
+	  <a href="/assets/pdf/Poulos_et_al_2017.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+	  
+	
+	</div>
+</div>
+
+<div id="poulos2017earthquake" class="col-sm-11">
+
+<div class="author">
+	
+	  
+	  
+	  
+	  
+	  
+	  
+		
+		  
+			<em>Poulos, A.</em>,
+		  
+		
+	  
+	
+	  
+	  
+	  
+	  
+		
+		  
+			
+			
+	  
+	  
+	  
+		
+		  
+			
+			  <a href="https://www.ing.uc.cl/en/academicos-e-investigadores/juan-carlos-de-la-llera-martin/" target="_blank">de la Llera, J. C.</a>,
+			
+		  
+		
+	  
+	
+	  
+	  
+	  
+	  
+		
+		  
+			
+			
+	  
+	  
+	  
+		
+		  
+			
+			  and <a href="https://www.nist.gov/people/judith-mitrani-reiser" target="_blank"> Mitrani-Reiser, J.</a>
+			
+		  
+		
+	  
+	
+	
+	(2017).
+	Earthquake risk assessment of buildings accounting for human evacuation.
+	<i>Earthquake Engineering &amp; Structural Dynamics</i>
+	
+		, 46(4), 561-583.
+	
+	
+</div>
+
+</div>
+
+</div>
+
+
+</li></ol>
+
+</div>
+
+  </article>
 
 </div>
 
