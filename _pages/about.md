@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-description: Mendenhall Fellow, <a href="https://www.usgs.gov/" target="_blank">U.S. Geological Survey</a>
+description: Assistant Professor, <a href="https://www.uc.cl/en" target="_blank">Pontificia Universidad Católica de Chile</a>
 
 profile:
   align: right
@@ -14,8 +14,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a Civil Engineer working at the [Earthquake Science Center](https://www.usgs.gov/centers/earthquake-science-center){:target="_blank"} of the U.S. Geological Survey. Most of my research is within the field of earthquake engineering. Some of my specific topics of interest are the characterization and simulation of earthquake ground motions, and the assessment of seismic risk for spatially distributed infrastructure.
+I am a Professor in the Department of Structural and Geotechnical Engineering at [Pontificia Universidad Católica de Chile (UC)](https://www.uc.cl/en){:target="_blank"}. My research focuses in earthquake engineering, with particular emphasis on the characterization and simulation of earthquake ground motions and the assessment of seismic risk for spatially distributed infrastructure.
 
-I hold a PhD in Structural Engineering from [Stanford University](https://www.stanford.edu/){:target="_blank"}. I also completed my undergraduate studies in Civil Engineering and an MSc in Structural Engineering at [Pontificia Universidad Católica de Chile](https://www.uc.cl/en){:target="_blank"}. I previously worked at the Research Center for Integrated Disaster Risk Management ([CIGIDEN](https://www.cigiden.cl/en/home/){:target="_blank"}) in Chile. I also have industry and consulting experience in seismic hazard and risk assessment.
+Prior to joining UC, I was a Mendenhall Fellow at the [Earthquake Science Center](https://www.usgs.gov/centers/earthquake-science-center){:target="_blank"} of the [U.S. Geological Survey](https://www.usgs.gov/){:target="_blank"}. I hold a PhD in Structural Engineering from [Stanford University](https://www.stanford.edu/){:target="_blank"}. I also earned my undergraduate degree in Civil Engineering and an MSc in Structural Engineering at [Pontificia Universidad Católica de Chile](https://www.uc.cl/en){:target="_blank"}. I previously worked at the Research Center for Integrated Disaster Risk Management ([CIGIDEN](https://www.cigiden.cl/en/home/){:target="_blank"}) and have industry and consulting experience in seismic hazard and risk assessment.
 
-This website presents my [publications](/publications) and keeps track of my research progress. It also summarizes the [research topics](/research) I have worked on.
+This website presents my [publications](/publications), keeps track of my research progress, and provides an overview of the [research topics](/research) I have worked on.

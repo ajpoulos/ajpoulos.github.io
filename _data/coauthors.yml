@@ -175,3 +175,16 @@
   - firstname: ["Eduardo", "E."]
     url: https://profiles.auckland.ac.nz/eduardo-allen
 
+"Hirakawa":
+  - firstname: ["Evan", "E.", "E. T.", "Evan T."]
+    url: https://www.usgs.gov/staff-profiles/evan-hirakawa
+    
+"Baltay":
+  - firstname: ["Annemarie", "A.", "Annemarie S.", "A. S."]
+    url: https://www.usgs.gov/staff-profiles/annemarie-baltay
+
+"Parker":
+  - firstname: ["Grace", "G.", "Grace A.", "G. A.", "Grace Alexandra"]
+    url: https://www.usgs.gov/staff-profiles/grace-parker
+
+    
