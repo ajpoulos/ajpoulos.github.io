@@ -11,7 +11,7 @@
   Alan  Poulos
 
 
-  | blog
+  | Correlations of spectral accelerations
 
 </title>
 <meta name="description" content="My personal website.
@@ -45,7 +45,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 110 110%22><text y=%22.95em%22 font-size=%2290%22>🌎</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/research/3_correlation/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -135,8 +135,6 @@
           
           
           
-          
-          
           <li class="nav-item ">
               <a class="nav-link" href="/publications/">
                 Publications
@@ -185,18 +183,219 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2></h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Correlations of spectral accelerations</h1>
+    <p class="post-description"></p>
+  </header>
+
+  <article>
+    <p>Ground motion models provide a marginal probability distribution of a ground motion intensity measure (e.g., a spectral acceleration at a specific period), given rupture and site parameters (e.g., earthquake magnitude and source-to-site distance). However, several applications require the joint probability distribution of these intensity measures, such as vector-valued probabilistic seismic hazard analysis and constructing conditional spectra. Assuming that the logarithm of these intensity measures has a multivariate normal distribution, their joint probability distribution can be constructed by knowing the correlations between them. We estimated these correlations for spectral accelerations of different periods using ground motion records from subduction earthquakes in Chile (Candia et al., 2020). These correlations depend on the two periods of the corresponding spectral accelerations. We also developed the first model for these correlations that depends on the damping ratio (Poulos &amp; Miranda, 2023). Previous models only considered 5% damping. Our model now depends on four variables, that is, the two periods and the two damping ratios of the corresponding spectral accelerations. Figure 1 shows the sensitivity of the correlations to both damping ratios for four different combinations of periods.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/Surfaces.png" alt="" title="Figure 1" />
+    </div>
+</div>
+<div class="caption">
+    Figure 1: Correlations between spectral accelerations at T<sub>1</sub> = 1 s and spectral accelerations at: (a) T<sub>2</sub> = 0.1 s, (b) T<sub>2</sub> = 0.3 s, (c) T<sub>2</sub> = 1 s, and (d) T<sub>2</sub> = 3 s, as a function of the damping ratios in the two oscillators.
+</div>
+
+<div class="publications">
+
+<h3>Publications</h3>
+
+<ol class="bibliography"><li><div class="row">
+
+<div class="col-sm-1">
+  <div class="links_short">
+	
+	  
+	  <a href="/assets/pdf/Poulos_Miranda_2023_EESD.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+	  
+	
+	</div>
+</div>
+
+<div id="poulos2023damping" class="col-sm-11">
+
+<div class="author">
+	
+	  
+	  
+	  
+	  
+	  
+	  
+		
+		  
+			<em>Poulos, A.</em>,
+		  
+		
+	  
+	
+	  
+	  
+	  
+	  
+		
+		  
+			
+			
+	  
+	  
+	  
+		
+		  
+			
+			  and <a href="https://profiles.stanford.edu/eduardo-miranda" target="_blank"> Miranda, E.</a>
+			
+		  
+		
+	  
+	
+	
+	(2023).
+	Damping-dependent correlations between response spectral ordinates.
+	<i>Earthquake Engineering &amp; Structural Dynamics</i>
+	
+		, 52(4), 1078-1090.
+	
+	
+</div>
+
+</div>
+
+</div>
 
 
-  <ul class="post-list">
+</li>
+<li><div class="row">
+
+<div class="col-sm-1">
+  <div class="links_short">
+	
+      <a href="https://doi.org/10.1177/8755293019891723" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>
     
-  </ul>
+	</div>
+</div>
 
-  
+<div id="candia2020correlations" class="col-sm-11">
 
+<div class="author">
+	
+	  
+	  
+	  
+	  
+		
+		  
+			
+			
+	  
+	  
+	  
+		
+		  
+			
+			  <a href="https://scholar.google.com/citations?user=IjVmyKoAAAAJ&amp;hl" target="_blank"> Candia, G.</a>,
+			
+		  
+		
+	  
+	
+	  
+	  
+	  
+	  
+	  
+	  
+		
+		  
+			<em>Poulos, A.</em>,
+		  
+		
+	  
+	
+	  
+	  
+	  
+	  
+		
+		  
+			
+			
+	  
+	  
+	  
+		
+		  
+			
+			  <a href="https://www.ing.uc.cl/en/academicos-e-investigadores/juan-carlos-de-la-llera-martin/" target="_blank">de la Llera, J. C.</a>,
+			
+		  
+		
+	  
+	
+	  
+	  
+	  
+	  
+		
+		  
+			
+			
+	  
+	  
+	  
+		
+		  
+			
+			  <a href="https://www.ing.uc.cl/academicos-e-investigadores/jorge-gustavo-federico-crempien-de-la-carrera/" target="_blank"> Crempien, J. G. F.</a>,
+			
+		  
+		
+	  
+	
+	  
+	  
+	  
+	  
+		
+		  
+			
+			
+	  
+	  
+	  
+		
+		  
+			
+			  and <a href="https://ce.gatech.edu/directory/person/jorge-macedo" target="_blank"> Macedo, J.</a>
+			
+		  
+		
+	  
+	
+	
+	(2020).
+	Correlations of spectral accelerations in the Chilean subduction zone.
+	<i>Earthquake Spectra</i>
+	
+		, 36(2), 788-805.
+	
+	
+</div>
+
+</div>
+
+</div>
+
+
+</li></ol>
+
+</div>
+
+  </article>
 
 </div>
 
